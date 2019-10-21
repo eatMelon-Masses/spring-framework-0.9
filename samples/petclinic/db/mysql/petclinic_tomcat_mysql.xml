@@ -12,7 +12,7 @@
     
     <parameter>
       <name>driverClassName</name>
-      <value>org.gjt.mm.mysql.Driver</value>
+      <value>com.mysql.jdbc.Driver</value>
     </parameter>
     <!--
           The JDBC connection url for connecting to your MySQL dB.
@@ -22,7 +22,7 @@
     -->
     <parameter>
       <name>url</name>
-      <value>jdbc:mysql://144.34.211.201:3306/petclinic?autoReconnect=true</value>
+      <value>jdbc:mysql://localhost:3306/petclinic?autoReconnect=true</value>
     </parameter>
     <parameter>
       <name>username</name>

@@ -1,6 +1,5 @@
 CREATE DATABASE petclinic;
 
-GRANT ALL ON petclinic.* TO pc@localhost IDENTIFIED BY 'pc';
 
 USE petclinic;
 

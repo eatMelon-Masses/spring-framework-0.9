@@ -143,14 +143,14 @@
 	</target>
 
 
-	<target name="setupHSQL" description="Setup HSQL database properties" if="useHSQL">
+<!--	<target name="setupHSQL" description="Setup HSQL database properties" if="useHSQL">
 
 		<property name="db.driver" value="${hsql.driver}"/>
 		<property name="db.url" value="${hsql.url}"/>
 		<property name="db.user" value="${hsql.user}"/>
 		<property name="db.pw" value="${hsql.pw}"/>
 
-	</target>
+	</target>-->
 
 
 	<target name="setupMYSQL" description="Setup MYSQL database properties" if="useMYSQL">
@@ -163,7 +163,7 @@
 	</target>
 
 
-	<target name="setupDB" depends="setupHSQL,setupMYSQL" description="Initialize the selected database">
+	<target name="setupDB" depends="setupMYSQL" description="Initialize the selected database">
 
 		<ant dir="${db.dir}"/>
 

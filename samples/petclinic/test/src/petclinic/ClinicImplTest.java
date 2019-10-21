@@ -37,7 +37,7 @@ public class ClinicImplTest extends TestCase {
     public ClinicImplTest(java.lang.String testName) throws java.io.IOException {
         super(testName);
         
-        ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("/applicationContext.xml");
+        ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
         DataSource ds = (DataSource) ctx.getBean("dataSource");
         ClinicDAO dao = (ClinicDAO) ctx.getBean("clinicDAO");
         clinic = (ClinicImpl) ctx.getBean("clinic");
